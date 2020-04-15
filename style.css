@@ -3,6 +3,9 @@
 	flex-direction: row;
 }
 
+nav {flex:1;}
+main{flex:9;}
+
 nav {
 	background-color: #c2c2e3;
 	padding: 10px;
