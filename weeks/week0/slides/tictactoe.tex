@@ -4,6 +4,7 @@
 \usepackage{fancybox}
 \usepackage{pdfpages}
 \usepackage{listings}
+\usepackage{tikz-cd}
 \usetheme{Pittsburgh}
 \usecolortheme{owl}
 \title{Состязательный поиск}
@@ -68,8 +69,8 @@
 \begin{frame}
 	\frametitle{Игра}
 	\begin{itemize}
-		\item $S_0$ начальное состояние
-		\item Игрок(s) вычисляет кто следующий ходит в состоянии s
+		\item $S_0$ - начальное состояние
+		\item Игрок(s) вычисляет, кто следующий ходит в состоянии s
 		\item Действия(s) вычисляет допустимые шаги в состоянии s
 		\item Результат(s, a) вычисляет состояние после шага a из состояния s
 		\item Конец(s) проверяет, что состояние s конечное
@@ -206,65 +207,53 @@
 		X& X & O
 \end{tabular}  
 \end{frame}
-\begin{frame}
+\begin{frame}[fragile]\fontsize{6}{12}\selectfont
+
 	\frametitle{Игрок(s)=O}
-\begin{tabular}{c c c}
-
-
+\begin{tikzcd}
 	&\begin{tabular}{c}
-		Мин:\\
+		MinV:\\
 		0
-	\end{tabular} 	\begin{tabular}{c|c|c}
-				& X & O \\ \hline
-				O& X & X \\ \hline
-				X&  & O
-		\end{tabular} 			 &  \\
-
+	\end{tabular} 	\tictactoe
+				{\,} {X}  {O}
+				{O} {X}  {X} 
+				{X} {\,} {O}
+			\arrow{ld}\arrow{rd}		 &  \\
 	\begin{tabular}{c}
-	Мах:\\
+		MaxV:\\
 		1
 	\end{tabular} 
-	\begin{tabular}{c|c|c}
-	{\color{yellow} O}& X & O \\ \hline
-	O& X & X \\ \hline
-	X&  & O
-	\end{tabular}  		
-	&			&
+	\tictactoe
+	{\cy{O}} {X} { O}
+	{O} {X} { X}
+	{X} {} { O}
+	\arrow{d}		&			&
 					\begin{tabular}{c}
-						Мах:\\
+						MaxV:\\
 						0
-					\end{tabular} \begin{tabular}{c|c|c}
-						& X & O \\ \hline
-						O& X & X \\ \hline
-						 X& {\color{yellow} O} & O
-					\end{tabular}
-					\\
-
-	\bigskip \; & \; & \\
+					\end{tabular} 
+						\tictactoe
+						{} {X} {O}
+						{O}{ X} { X}
+						 {X} {\cy{O}}{O}\arrow{d} 	\\
 \begin{tabular}{c}
-	Знач:\\
+	Val:\\
 		1
 	\end{tabular} 
-	\begin{tabular}{c|c|c}
-	{\color{yellow} O}& X & O \\ \hline
-	O& X & X \\ \hline
-		X& {\color{yellow}X }& O
-\end{tabular}  		
+	\tictactoe
+	{\cy{O}}{X}{O}
+	{O}   {X} { X}
+	{X} {\cy{X}} {O}
 	&			&
 					\begin{tabular}{c}
-						Мах:\\
+						Val:\\
 						0
 					\end{tabular} 
-					\begin{tabular}{c|c|c}
-						{\color{yellow}X}	& X & O \\ \hline
-						O& X & X \\ \hline
-						 X& {\color{yellow} O} & O
-					\end{tabular} 
-
-
-
-
-\end{tabular}
+					\tictactoe
+						{\cy{X}}{X}{ O}
+						  {O}  {X}  {X}
+						 {X} {\cy{O}}{O}
+\end{tikzcd}
 \end{frame}
 {
 \setbeamercolor{background canvas}{bg=}
