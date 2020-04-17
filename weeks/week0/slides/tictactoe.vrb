@@ -1,15 +1,14 @@
 \fontsize{6}{12}\selectfont
 
-	\frametitle{Игрок(s)=O}
 \begin{tikzcd}
-	&\begin{tabular}{c}
+	Plaer(s)=O	&\begin{tabular}{c}
 		MinV:\\
 		0
-	\end{tabular} 	\tictactoe
+		\end{tabular} 	\tictactoe
 				{\,} {X}  {O}
 				{O} {X}  {X}
 				{X} {\,} {O}
-			\arrow{ld}\arrow{rd}		 &  \\
+	\arrow{ld}\arrow{rd}		 &  \\
 	\begin{tabular}{c}
 		MaxV:\\
 		1

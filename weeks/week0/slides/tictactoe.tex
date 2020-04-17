@@ -70,10 +70,15 @@
 	\frametitle{Игра}
 	\begin{itemize}
 		\item $S_0$ - начальное состояние
+			\pause
 		\item Игрок(s) вычисляет, кто следующий ходит в состоянии s
+			\pause
 		\item Действия(s) вычисляет допустимые шаги в состоянии s
+			\pause
 		\item Результат(s, a) вычисляет состояние после шага a из состояния s
+			\pause
 		\item Конец(s) проверяет, что состояние s конечное
+			\pause
 		\item Оценка(s) вычисляет числовое значение конечного состояния s
 				
 	\end{itemize}
@@ -94,47 +99,46 @@
 	
 	\bigskip
 
-	Игрок(\begin{tabular}{c|c|c}
-		\;&\;\;&\;\\ \hline
+	\onslide<2->{Игрок(} \onslide<1->{ \begin{tabular}{c|c|c}
+		\;&\;&\;\\ \hline
 		& & \\ \hline
 		& &
-	\end{tabular} ) = X 
+	\end{tabular}} \onslide<2->{ ) = X} 
 
 	\bigskip
 
-	Игрок(\begin{tabular}{c|c|c}
+	\onslide<4->{Игрок(}\onslide<3->{\begin{tabular}{c|c|c}
 		\;&\;&\;\\ \hline
 		&X & \\ \hline
 		& &
-	\end{tabular} ) = O 
+	\end{tabular}} \onslide<4->{) = O }
 \end{frame}
 
 \begin{frame}
 	\frametitle{Действия(s)}
 
 	\bigskip
-	Действия(\begin{tabular}{c|c|c}
+	\onslide<1->{Действия(\begin{tabular}{c|c|c}
 		\;& X & O\\ \hline
 		O &X & X\\ \hline
 		X& &O
-	\end{tabular} ) = \{
-		\begin{tabular}{c|c|c}
-			{\color{yellow}o}&\;&\;\\ \hline
-		& & \\ \hline
-		& &
-	\end{tabular},  \begin{tabular}{c|c|c}
-		\;&\;&\;\\ \hline
-		& & \\ \hline
-			& {\color{yellow} o}&
-	\end{tabular} 
-	\}
+	\end{tabular} ) =} \onslide<2->{\{
+		\tictactoe
+			{\cy{o}}{\;}{\;}
+			  {\;}{\;}{\;}
+			  {\;}{\;}{\;} ,}
+		\onslide<3->{  \tictactoe
+			  {\;}{\;}{\;}
+			  {\;}{\;}{\;}
+			 {\cy{o}}{\;}{\;} }
+	\onslide<2->{\}}
 \end{frame}
 \begin{frame}
 	\frametitle{Результат(s, a)}
 
 	\bigskip
 
-	Результат 
+	\onslide<1->{	Результат 
 		(
 		\begin{tabular}{c|c|c}
 			\;& X & O\\ \hline
@@ -146,12 +150,12 @@
 			& & \\ \hline
 			& &
 		\end{tabular} 
-		) =
-			\begin{tabular}{c|c|c}
+		) =}
+		\onslide<2->{	\begin{tabular}{c|c|c}
 				O&X&O\\ \hline
 				O&X &X \\ \hline
 				X& &O
-			\end{tabular} 
+		\end{tabular} }
 \end{frame}
 \begin{frame}
 	\frametitle{Конец(s)}
@@ -165,7 +169,7 @@
 		X& O & X
 	\end{tabular} 
 		) = false
-
+\pause
 	\bigskip
 
 	Конец( 
@@ -180,19 +184,20 @@
 \begin{frame}
 \frametitle{Оценка(s)}
 	Оценка(
-	\begin{tabular}{c|c|c}
-			O&  & X \\ \hline
-			O& X & \\ \hline
-			X& O & X
-	\end{tabular} = 1
+	\tictactoe
+			{O}{}{X}
+			{O}{X}{} 
+			{X}{O}{X}
+	) = 1
 
 	\bigskip
+	\pause
 	Оценка(
-	\begin{tabular}{c|c|c}
-			O&  & X \\ \hline
-			X& O & \\ \hline
-			O& X & O
-	\end{tabular} = -1
+	\tictactoe
+			{O}{}{X}
+			{X}{O}{}
+			{O} {X}{O}
+	) = -1
 \end{frame}
 \begin{frame}
 	\frametitle{Конечное(s)=true}
@@ -209,16 +214,15 @@
 \end{frame}
 \begin{frame}[fragile]\fontsize{6}{12}\selectfont
 
-	\frametitle{Игрок(s)=O}
 \begin{tikzcd}
-	&\begin{tabular}{c}
+	Plaer(s)=O	&\begin{tabular}{c}
 		MinV:\\
 		0
-	\end{tabular} 	\tictactoe
+		\end{tabular} 	\tictactoe
 				{\,} {X}  {O}
 				{O} {X}  {X} 
 				{X} {\,} {O}
-			\arrow{ld}\arrow{rd}		 &  \\
+	\arrow{ld}\arrow{rd}		 &  \\
 	\begin{tabular}{c}
 		MaxV:\\
 		1
