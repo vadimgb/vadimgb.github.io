@@ -1,263 +1,135 @@
-import itertools
+class Высказывание:
 
-
-class Sentence():
-
-    def evaluate(self, model):
-        """Evaluates the logical sentence."""
-        raise Exception("nothing to evaluate")
-
-    def formula(self):
-        """Returns string formula representing logical sentence."""
-        return ""
-
-    def symbols(self):
-        """Returns a set of all symbols in the logical sentence."""
+    def вычислить(self, модель):
+        """Вычисляет высказывание"""
+        raise Exception("Нечего вычислять")
+    
+    def символы(self):
+        """set символов входящих в высказывание"""
         return set()
 
     @classmethod
-    def validate(cls, sentence):
-        if not isinstance(sentence, Sentence):
-            raise TypeError("must be a logical sentence")
+    def проверить(cls, высказывание):
+        if not isinstance(высказывание, Высказывание):
+            raise TypeError("Не является высказыванием")
 
-    @classmethod
-    def parenthesize(cls, s):
-        """Parenthesizes an expression if not already parenthesized."""
-        def balanced(s):
-            """Checks if a string has balanced parentheses."""
-            count = 0
-            for c in s:
-                if c == "(":
-                    count += 1
-                elif c == ")":
-                    if count <= 0:
-                        return False
-                    count -= 1
-            return count == 0
-        if not len(s) or s.isalpha() or (
-            s[0] == "(" and s[-1] == ")" and balanced(s[1:-1])
-        ):
-            return s
-        else:
-            return f"({s})"
+            
 
+class Символ(Высказывание):
+    def __init__(self, имя):
+        self.имя = имя
 
-class Symbol(Sentence):
-
-    def __init__(self, name):
-        self.name = name
-
-    def __eq__(self, other):
-        return isinstance(other, Symbol) and self.name == other.name
-
-    def __hash__(self):
-        return hash(("symbol", self.name))
-
-    def __repr__(self):
-        return self.name
-
-    def evaluate(self, model):
+    def вычислить(self, модель):
         try:
-            return bool(model[self.name])
+            return модель[self.имя]
         except KeyError:
-            raise EvaluationException(f"variable {self.name} not in model")
+            raise Exception(f"{self.имя} нет в модели")
 
-    def formula(self):
-        return self.name
-
-    def symbols(self):
-        return {self.name}
+    def символы(self):
+        return {self.имя}
 
 
-class Not(Sentence):
-    def __init__(self, operand):
-        Sentence.validate(operand)
-        self.operand = operand
+class Не(Высказывание):
+    def __init__(self, операнд):
+        Высказывание.проверить(операнд)
+        self.операнд = операнд
 
-    def __eq__(self, other):
-        return isinstance(other, Not) and self.operand == other.operand
+    def вычислить(self, модель):
+        return not self.операнд.вычислить(модель)
 
-    def __hash__(self):
-        return hash(("not", hash(self.operand)))
-
-    def __repr__(self):
-        return f"Not({self.operand})"
-
-    def evaluate(self, model):
-        return not self.operand.evaluate(model)
-
-    def formula(self):
-        return "¬" + Sentence.parenthesize(self.operand.formula())
-
-    def symbols(self):
-        return self.operand.symbols()
+    def символы(self):
+        return self.операнд.символы()
 
 
-class And(Sentence):
-    def __init__(self, *conjuncts):
-        for conjunct in conjuncts:
-            Sentence.validate(conjunct)
-        self.conjuncts = list(conjuncts)
+class И(Высказывание):
+    def __init__(self, *операнды):
+        for операнд in операнды:
+            Высказывание.проверить(операнд)
+        self.операнды = операнды
 
-    def __eq__(self, other):
-        return isinstance(other, And) and self.conjuncts == other.conjuncts
+    def вычислить(self, модель):
+        return all([операнд.вычислить(модель) for операнд in self.операнды])
 
-    def __hash__(self):
-        return hash(
-            ("and", tuple(hash(conjunct) for conjunct in self.conjuncts))
-        )
-
-    def __repr__(self):
-        conjunctions = ", ".join(
-            [str(conjunct) for conjunct in self.conjuncts]
-        )
-        return f"And({conjunctions})"
-
-    def add(self, conjunct):
-        Sentence.validate(conjunct)
-        self.conjuncts.append(conjunct)
-
-    def evaluate(self, model):
-        return all(conjunct.evaluate(model) for conjunct in self.conjuncts)
-
-    def formula(self):
-        if len(self.conjuncts) == 1:
-            return self.conjuncts[0].formula()
-        return " ∧ ".join([Sentence.parenthesize(conjunct.formula())
-                           for conjunct in self.conjuncts])
-
-    def symbols(self):
-        return set.union(*[conjunct.symbols() for conjunct in self.conjuncts])
+    def символы(self):
+        return set.union(*[операнд.символы() for операнд in self.операнды])
 
 
-class Or(Sentence):
-    def __init__(self, *disjuncts):
-        for disjunct in disjuncts:
-            Sentence.validate(disjunct)
-        self.disjuncts = list(disjuncts)
+class Или(Высказывание):
+    def __init__(self, *операнды):
+        for операнд in операнды:
+            Высказывание.проверить(операнд)
+        self.операнды = операнды
 
-    def __eq__(self, other):
-        return isinstance(other, Or) and self.disjuncts == other.disjuncts
+    def вычислить(self, модель):
+        return any([операнд.вычислить(модель) for операнд in self.операнды])
 
-    def __hash__(self):
-        return hash(
-            ("or", tuple(hash(disjunct) for disjunct in self.disjuncts))
-        )
-
-    def __repr__(self):
-        disjuncts = ", ".join([str(disjunct) for disjunct in self.disjuncts])
-        return f"Or({disjuncts})"
-
-    def evaluate(self, model):
-        return any(disjunct.evaluate(model) for disjunct in self.disjuncts)
-
-    def formula(self):
-        if len(self.disjuncts) == 1:
-            return self.disjuncts[0].formula()
-        return " ∨  ".join([Sentence.parenthesize(disjunct.formula())
-                            for disjunct in self.disjuncts])
-
-    def symbols(self):
-        return set.union(*[disjunct.symbols() for disjunct in self.disjuncts])
+    def символы(self):
+        return set.union(*[операнд.символы() for операнд in self.операнды])
 
 
-class Implication(Sentence):
-    def __init__(self, antecedent, consequent):
-        Sentence.validate(antecedent)
-        Sentence.validate(consequent)
-        self.antecedent = antecedent
-        self.consequent = consequent
+class Импликация(Высказывание):
+    def __init__(self, посылка, следствие): 
+        Высказывание.проверить(посылка)
+        Высказывание.проверить(следствие)
+        self.посылка = посылка
+        self.следствие = следствие
 
-    def __eq__(self, other):
-        return (isinstance(other, Implication)
-                and self.antecedent == other.antecedent
-                and self.consequent == other.consequent)
+    def вычислить(self, модель):
+        return  (not self.посылка.вычислить(модель)) or self.следствие.вычислить(модель)
 
-    def __hash__(self):
-        return hash(("implies", hash(self.antecedent), hash(self.consequent)))
-
-    def __repr__(self):
-        return f"Implication({self.antecedent}, {self.consequent})"
-
-    def evaluate(self, model):
-        return ((not self.antecedent.evaluate(model))
-                or self.consequent.evaluate(model))
-
-    def formula(self):
-        antecedent = Sentence.parenthesize(self.antecedent.formula())
-        consequent = Sentence.parenthesize(self.consequent.formula())
-        return f"{antecedent} => {consequent}"
-
-    def symbols(self):
-        return set.union(self.antecedent.symbols(), self.consequent.symbols())
+    def символы(self):
+        return set.union(self.посылка.символы(), self.следствие.символы())
 
 
-class Biconditional(Sentence):
-    def __init__(self, left, right):
-        Sentence.validate(left)
-        Sentence.validate(right)
-        self.left = left
-        self.right = right
+class Эквивалентность(Высказывание):
+    def __init__(self, левый, правый): 
+        Высказывание.проверить(левый)
+        Высказывание.проверить(правый)
+        self.левый = левый
+        self.правый = правый
 
-    def __eq__(self, other):
-        return (isinstance(other, Biconditional)
-                and self.left == other.left
-                and self.right == other.right)
+    def вычислить(self, модель):
+        return  ((self.левый.вычислить(модель) 
+                and  self.правый.вычислить(модель)) 
+                or (not self.левый.вычислить(модель) 
+                    and  not self.правый.вычислить(модель))) 
 
-    def __hash__(self):
-        return hash(("biconditional", hash(self.left), hash(self.right)))
-
-    def __repr__(self):
-        return f"Biconditional({self.left}, {self.right})"
-
-    def evaluate(self, model):
-        return ((self.left.evaluate(model)
-                 and self.right.evaluate(model))
-                or (not self.left.evaluate(model)
-                    and not self.right.evaluate(model)))
-
-    def formula(self):
-        left = Sentence.parenthesize(str(self.left))
-        right = Sentence.parenthesize(str(self.right))
-        return f"{left} <=> {right}"
-
-    def symbols(self):
-        return set.union(self.left.symbols(), self.right.symbols())
+    def символы(self):
+        return set.union(self.левый.символы(), self.правый.символы())
 
 
-def model_check(knowledge, query):
-    """Checks if knowledge base entails query."""
+def проверка_рекурсия(знания, запрос, символы, модель):
+    """Рекурсивная проверка следования из знаний запроса"""
+    
+    # Каждому символу модели присвоено значение
+    if len(символы) == 0:
+        if знания.вычислить(модель):
+            return запрос.вычислить(модель)
+        return True
 
-    def check_all(knowledge, query, symbols, model):
-        """Checks if knowledge base entails query, given a particular model."""
+    else:
+        # Выбираем один из оставшихся символов
+        остаток = символы.copy()
+        символ = остаток.pop()
 
-        # If model has an assignment for each symbol
-        if not symbols:
+        # Создаём модель, где этот символ истинен.
+        модель_истина = модель.copy()
+        модель_истина[символ] = True
 
-            # If knowledge base is true in model, then query must also be true
-            if knowledge.evaluate(model):
-                return query.evaluate(model)
-            return True
-        else:
+        # Создаём модель, где этот символ ложен.
+        модель_ложь = модель.copy()
+        модель_ложь[символ] = False
 
-            # Choose one of the remaining unused symbols
-            remaining = symbols.copy()
-            p = remaining.pop()
+        # 
+        return (проверка_рекурсия(знания, запрос, остаток, модель_истина) 
+                and проверка_рекурсия(знания, запрос, остаток, модель_ложь))
 
-            # Create a model where the symbol is true
-            model_true = model.copy()
-            model_true[p] = True
 
-            # Create a model where the symbol is false
-            model_false = model.copy()
-            model_false[p] = False
+def проверка_моделей(знания, запрос):
+    """Проверяет, что из знаний вытекает запрос."""
 
-            # Ensure entailment holds in both models
-            return (check_all(knowledge, query, remaining, model_true) and
-                    check_all(knowledge, query, remaining, model_false))
+    # Объединяем символы из знаний и запроса 
+    символы = set.union(знания.символы(), запрос.символы())
+    
+    return проверка_рекурсия(знания, запрос, символы, {})
 
-    # Get all symbols in both knowledge and query
-    symbols = set.union(knowledge.symbols(), query.symbols())
-
-    # Check that knowledge entails query
-    return check_all(knowledge, query, symbols, dict())

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.4.21)  22 APR 2020 08:51
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.4.21)  22 APR 2020 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1284,8 +1284,35 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 )
 \everycr=\toks47
 \minrowclearance=\skip68
+) (./lecture14.aux
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Info: Font family 'CMUSansSerif(1)' created for font 'CMU
+(fontspec)             Sans Serif' with options
+(fontspec)             [Ligatures={TeX},Renderer=Basic,Ligatures=TeX,Script=Cyr
+illic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"CMU Sans
+(fontspec)             Serif/OT:script=cyrl;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"CMU Sans
+(fontspec)             Serif/B/OT:script=cyrl;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"CMU Sans
+(fontspec)             Serif/I/OT:script=cyrl;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"CMU Sans
+(fontspec)             Serif/BI/OT:script=cyrl;language=DFLT;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+
 )
-No file lecture14.aux.
 \openout1 = `lecture14.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -1308,6 +1335,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1357,12 +1385,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
 LaTeX Info: Redefining \nameref on input line 21.
+
+(./lecture14.out) (./lecture14.out)
 \@outlinefile=\write6
 \openout6 = `lecture14.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
@@ -1393,29 +1419,6 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package fontspec Warning: Ignored LuaTeX-only feature:
 (fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
 
-
-Package fontspec Info: Font family 'CMUSansSerif(1)' created for font 'CMU
-(fontspec)             Sans Serif' with options
-(fontspec)             [Ligatures={TeX},Renderer=Basic,Ligatures=TeX,Script=Cyr
-illic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"CMU Sans
-(fontspec)             Serif/OT:script=cyrl;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"CMU Sans
-(fontspec)             Serif/B/OT:script=cyrl;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"CMU Sans
-(fontspec)             Serif/I/OT:script=cyrl;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"CMU Sans
-(fontspec)             Serif/BI/OT:script=cyrl;language=DFLT;mapping=tex-text;"
-
-(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
-
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  TU/texgyrepagella-math.otf(1)/m/n --> TU/CMUSerif(0)/m/
 n on input line 21.
@@ -1435,7 +1438,7 @@ ine 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/CMUTypewriterText(0)/bx/n on input 
 line 21.
-No file lecture14.nav.
+(./lecture14.nav)
 
 Package fontspec Warning: Ignored LuaTeX-only feature:
 (fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
@@ -2833,6 +2836,41 @@ Package fontspec Warning: Ignored LuaTeX-only feature:
 
 [37
 
+]
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[38
+
 ])
 \tf@nav=\write7
 \openout7 = `lecture14.nav'.
@@ -2853,23 +2891,16 @@ Package fontspec Warning: Ignored LuaTeX-only feature:
 )
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
-
-
-Package rerunfilecheck Warning: File `lecture14.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lecture14.out':
-(rerunfilecheck)             Before: 
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E.
+Package rerunfilecheck Info: File `lecture14.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
  ) 
 Here is how much of TeX's memory you used:
- 36483 strings out of 494154
- 707833 string characters out of 6168411
- 1046780 words of memory out of 5000000
- 39831 multiletter control sequences out of 15000+600000
+ 36548 strings out of 494154
+ 708392 string characters out of 6168411
+ 1047780 words of memory out of 5000000
+ 39888 multiletter control sequences out of 15000+600000
  541140 words of font info for 124 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
  56i,11n,109p,800b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lecture14.pdf (37 pages).
+Output written on lecture14.pdf (38 pages).
