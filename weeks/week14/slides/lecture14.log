@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.4.21)  22 APR 2020 17:54
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.4.21)  23 APR 2020 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1481,7 +1481,7 @@ Package fontspec Warning: Ignored LuaTeX-only feature:
 
 [1
 
-] (./lec1_1.tex Excluding 'comment' comment.
+] (./proposition.txt Excluding 'comment' comment.
 
 Package fontspec Warning: Ignored LuaTeX-only feature:
 (fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
@@ -2020,7 +2020,7 @@ Package fontspec Warning: Ignored LuaTeX-only feature:
 
 [15
 
-]) (./lec1_2.tex
+]) (./inference.txt
 
 Package fontspec Warning: Ignored LuaTeX-only feature:
 (fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
@@ -2871,6 +2871,525 @@ Package fontspec Warning: Ignored LuaTeX-only feature:
 
 [38
 
+]) (./clue.txt
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[39
+
+] Excluding 'comment' comment.
+File: clue.jpg Graphic file (type bmp)
+<clue.jpg>
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[40
+
+]
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[41
+
+]
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[42
+
+]
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[43
+
+] Excluding 'comment' comment.
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[44
+
+]
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[45
+
+]
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[46
+
+]
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[47
+
+]
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[48
+
+]) (./puzzles.txt
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[49
+
+]
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[50
+
+]
+LaTeX Font Info:    Font shape `TU/texgyrepagella-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.00018pt on input line 52.
+LaTeX Font Info:    Font shape `TU/texgyrepagella-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.00012pt on input line 52.
+LaTeX Font Info:    Font shape `TU/texgyrepagella-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00009pt on input line 52.
+LaTeX Font Info:    Font shape `TU/texgyrepagella-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99982pt on input line 52.
+LaTeX Font Info:    Font shape `TU/texgyrepagella-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.99988pt on input line 52.
+LaTeX Font Info:    Font shape `TU/texgyrepagella-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99991pt on input line 52.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[51
+
 ])
 \tf@nav=\write7
 \openout7 = `lecture14.nav'.
@@ -2881,26 +3400,26 @@ Package fontspec Warning: Ignored LuaTeX-only feature:
 \tf@snm=\write9
 \openout9 = `lecture14.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
  (./lecture14.aux
 
 Package fontspec Warning: Ignored LuaTeX-only feature:
 (fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
 
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 27.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `lecture14.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
  ) 
 Here is how much of TeX's memory you used:
- 36548 strings out of 494154
- 708392 string characters out of 6168411
+ 36604 strings out of 494154
+ 709786 string characters out of 6168411
  1047780 words of memory out of 5000000
- 39888 multiletter control sequences out of 15000+600000
- 541140 words of font info for 124 fonts, out of 8000000 for 9000
+ 39927 multiletter control sequences out of 15000+600000
+ 544030 words of font info for 142 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
  56i,11n,109p,800b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lecture14.pdf (38 pages).
+Output written on lecture14.pdf (51 pages).
