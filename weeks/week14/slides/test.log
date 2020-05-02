@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.4.21)  21 APR 2020 19:49
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.4.21)  29 APR 2020 20:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,6 +897,10 @@ Package polyglossia Info: Default language is russian.
 File: gloss-english.ldf polyglossia: module for english
 )
 
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
 Package fontspec Warning: OpenType feature 'Ligatures=TeX,Historic' (hlig) not
 (fontspec)                available for font 'CMU Serif' with script
 (fontspec)                'CustomDefault' and language 'Default'.
@@ -934,8 +938,8 @@ Package fontspec Warning: OpenType feature 'Ligatures=TeX,Historic' (hlig) not
 
 Package fontspec Info: Font family 'CMUSerif(0)' created for font 'CMU Serif'
 (fontspec)             with options
-(fontspec)             [Ligatures={TeX},Ligatures=TeX,Ligatures={TeX,Historic}]
-.
+(fontspec)             [Ligatures={TeX},Renderer=Basic,Ligatures=TeX,Ligatures=
+{TeX,Historic}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -960,9 +964,13 @@ ext;"
 
 LaTeX Info: Redefining \rmfamily on input line 7.
 
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
 Package fontspec Info: Font family 'CMUSansSerif(0)' created for font 'CMU
 (fontspec)             Sans Serif' with options
-(fontspec)             [Ligatures={TeX},Ligatures=TeX].
+(fontspec)             [Ligatures={TeX},Renderer=Basic,Ligatures=TeX].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -983,10 +991,14 @@ Package fontspec Info: Font family 'CMUSansSerif(0)' created for font 'CMU
 
 LaTeX Info: Redefining \sffamily on input line 8.
 
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
 Package fontspec Info: Font family 'CMUTypewriterText(0)' created for font
 (fontspec)             'CMU Typewriter Text' with options
-(fontspec)             [Ligatures={TeX},WordSpace={1,0,0},HyphenChar=None,Punct
-uationSpace=WordSpace].
+(fontspec)             [Ligatures={TeX},Renderer=Basic,WordSpace={1,0,0},Hyphen
+Char=None,PunctuationSpace=WordSpace].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -1026,16 +1038,295 @@ uationSpace=WordSpace].
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
 LaTeX Info: Redefining \ttfamily on input line 9.
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeBerlin.sty
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerectangles.sty)
-) (./test.aux
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemeprofessionalfont
+s.sty) (/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+Package: unicode-math 2019/02/15 v0.8n Unicode maths in XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2019/02/15 v0.8n Unicode maths in XeLaTeX and LuaLa
+TeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+))
+\g__um_fam_int=\count325
+\g__um_fonts_used_int=\count326
+\l__um_primecount_int=\count327
+\g__um_primekern_muskip=\muskip18
+
+(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)
+
+Package unicode-math Info: I'm going to patch macro \subarray.
+
+
+Package unicode-math Info: I'm going to patch macro \r@@t.
+
+))
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Info: Font family 'texgyrepagella-math.otf(0)' created for
+(fontspec)             font 'texgyrepagella-math.otf' with options
+(fontspec)             [Ligatures={TeX},Renderer=Basic,BoldItalicFont={},Italic
+Font={},SmallCapsFont={},Script=Math].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[texgyrepagella-math.otf]/OT:script=math;language=DF
+LT;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Info: Font family 'texgyrepagella-math.otf(1)' created for
+(fontspec)             font 'texgyrepagella-math.otf' with options
+(fontspec)             [Ligatures={TeX},Renderer=Basic,BoldItalicFont={},Italic
+Font={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.5265-},{Size=7.06275
+-9.5265,Font=texgyrepagella-math.otf,Style=MathScript},{Size=-7.06275,Font=texg
+yrepagella-math.otf,Style=MathScriptScript}}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.5265->"[texgyrepagella-math.otf]/OT:script=math;langu
+age=DFLT;mapping=tex-text;"<7.06275-9.5265>"[texgyrepagella-math.otf]/OT:script
+=math;language=DFLT;+ssty=0;mapping=tex-text;"<-7.06275>"[texgyrepagella-math.o
+tf]/OT:script=math;language=DFLT;+ssty=1;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 12.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/texgyrepagella-math.otf(1)/m/n on in
+put line 12.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 12.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/texgyrepagella-math.otf(1)/bx/n on 
+input line 12.
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Info: texgyrepagella-math scale = 1.00001.
+
+
+Package fontspec Info: texgyrepagella-math scale = 1.00001.
+
+
+Package fontspec Info: texgyrepagella-math scale = 1.00001.
+
+
+Package fontspec Info: texgyrepagella-math scale = 1.00001.
+
+
+Package fontspec Info: Font family 'texgyrepagella-math.otf(2)' created for
+(fontspec)             font 'texgyrepagella-math.otf' with options
+(fontspec)             [Ligatures={TeX},Renderer=Basic,BoldItalicFont={},Italic
+Font={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.5265-},{Size=7.06275
+-9.5265,Font=texgyrepagella-math.otf,Style=MathScript},{Size=-7.06275,Font=texg
+yrepagella-math.otf,Style=MathScriptScript}},ScaleAgain=1.00001,FontAdjustment=
+{\fontdimen
+(fontspec)             8\font =7.884pt\relax \fontdimen 9\font
+(fontspec)             =5.13554pt\relax \fontdimen 10\font =5.13554pt\relax
+(fontspec)             \fontdimen 11\font =7.2927pt\relax \fontdimen 12\font
+(fontspec)             =3.40546pt\relax \fontdimen 13\font =3.8763pt\relax
+(fontspec)             \fontdimen 14\font =3.8763pt\relax \fontdimen 15\font
+(fontspec)             =3.2412pt\relax \fontdimen 16\font =2.5404pt\relax
+(fontspec)             \fontdimen 17\font =2.5404pt\relax \fontdimen 18\font
+(fontspec)             =2.5404pt\relax \fontdimen 19\font =1.2702pt\relax
+(fontspec)             \fontdimen 22\font =2.7375pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.5265->s*[1.00001]"[texgyrepagella-math.otf]/OT:script
+=math;language=DFLT;mapping=tex-text;"<7.06275-9.5265>s*[1.00001]"[texgyrepagel
+la-math.otf]/OT:script=math;language=DFLT;+ssty=0;mapping=tex-text;"<-7.06275>s
+*[1.00001]"[texgyrepagella-math.otf]/OT:script=math;language=DFLT;+ssty=1;mappi
+ng=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =7.884pt\relax \fontdimen 9\font
+(fontspec)             =5.13554pt\relax \fontdimen 10\font =5.13554pt\relax
+(fontspec)             \fontdimen 11\font =7.2927pt\relax \fontdimen 12\font
+(fontspec)             =3.40546pt\relax \fontdimen 13\font =3.8763pt\relax
+(fontspec)             \fontdimen 14\font =3.8763pt\relax \fontdimen 15\font
+(fontspec)             =3.2412pt\relax \fontdimen 16\font =2.5404pt\relax
+(fontspec)             \fontdimen 17\font =2.5404pt\relax \fontdimen 18\font
+(fontspec)             =2.5404pt\relax \fontdimen 19\font =1.2702pt\relax
+(fontspec)             \fontdimen 22\font =2.7375pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 12.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/texgyrepagella-math.otf(2)/m/n on i
+nput line 12.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 12.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/texgyrepagella-math.otf(2)/bx/n on 
+input line 12.
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Info: texgyrepagella-math scale = 0.99999.
+
+
+Package fontspec Info: texgyrepagella-math scale = 0.99999.
+
+
+Package fontspec Info: texgyrepagella-math scale = 0.99999.
+
+
+Package fontspec Info: texgyrepagella-math scale = 0.99999.
+
+
+Package fontspec Info: Font family 'texgyrepagella-math.otf(3)' created for
+(fontspec)             font 'texgyrepagella-math.otf' with options
+(fontspec)             [Ligatures={TeX},Renderer=Basic,BoldItalicFont={},Italic
+Font={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.5265-},{Size=7.06275
+-9.5265,Font=texgyrepagella-math.otf,Style=MathScript},{Size=-7.06275,Font=texg
+yrepagella-math.otf,Style=MathScriptScript}},ScaleAgain=0.99999,FontAdjustment=
+{\fontdimen
+(fontspec)             8\font =0.657pt\relax \fontdimen 9\font =1.314pt\relax
+(fontspec)             \fontdimen 10\font =1.314pt\relax \fontdimen 11\font
+(fontspec)             =1.314pt\relax \fontdimen 12\font =5.1246pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.5265->s*[0.99999]"[texgyrepagella-math.otf]/OT:script
+=math;language=DFLT;mapping=tex-text;"<7.06275-9.5265>s*[0.99999]"[texgyrepagel
+la-math.otf]/OT:script=math;language=DFLT;+ssty=0;mapping=tex-text;"<-7.06275>s
+*[0.99999]"[texgyrepagella-math.otf]/OT:script=math;language=DFLT;+ssty=1;mappi
+ng=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.657pt\relax \fontdimen 9\font
+(fontspec)             =1.314pt\relax \fontdimen 10\font =1.314pt\relax
+(fontspec)             \fontdimen 11\font =1.314pt\relax \fontdimen 12\font
+(fontspec)             =5.1246pt\relax \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+2.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/texgyrepagella-math.otf(3)/m/n on i
+nput line 12.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 12.
+
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/texgyrepagella-math.otf(3)/bx/n on 
+input line 12.
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemePittsburgh.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/beamercolorthemeowl/beamercolorthemeow
+l.sty
+Package: beamercolorthemeowl 2016/03/15 v0.1.1 A visible colour theme for Beame
+r presentations
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2019/02/02 v3.1.1 (3.1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfnodeparttextbox=\box73
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2019/02/02 v3.1.1 (3.1.1)
+\pgf@nodesepstart=\dimen278
+\pgf@nodesepend=\dimen279
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2019/02/02 v3.1.1 (3.1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2019/02/02 v3.1.1 (3.1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen280
+\pgffor@skip=\dimen281
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2019/02/02 v3.1.1 (3.1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgf@plot@mark@count=\count328
+\pgfplotmarksize=\dimen282
+)
+\tikz@lastx=\dimen283
+\tikz@lasty=\dimen284
+\tikz@lastxsaved=\dimen285
+\tikz@lastysaved=\dimen286
+\tikzleveldistance=\dimen287
+\tikzsiblingdistance=\dimen288
+\tikz@figbox=\box74
+\tikz@figbox@bg=\box75
+\tikz@tempbox=\box76
+\tikz@tempbox@bg=\box77
+\tikztreelevel=\count329
+\tikznumberofchildren=\count330
+\tikznumberofcurrentchild=\count331
+\tikz@fig@count=\count332
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfmatrixcurrentrow=\count333
+\pgfmatrixcurrentcolumn=\count334
+\pgf@matrix@numberofcolumns=\count335
+)
+\tikz@expandcount=\count336
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
+))) (./test.aux
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
 
 Package fontspec Info: Font family 'CMUSansSerif(1)' created for font 'CMU
 (fontspec)             Sans Serif' with options
-(fontspec)             [Ligatures={TeX},Ligatures=TeX,Script=Cyrillic].
+(fontspec)             [Ligatures={TeX},Renderer=Basic,Ligatures=TeX,Script=Cyr
+illic].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -1057,24 +1348,26 @@ Package fontspec Info: Font family 'CMUSansSerif(1)' created for font 'CMU
 )
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1111,8 +1404,8 @@ LaTeX Font Info:    ... okay on input line 13.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring OFF on input line 13.
+\AtBeginShipoutBox=\box78
+Package hyperref Info: Link coloring OFF on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1120,73 +1413,16 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count325
+\c@section@level=\count337
 )
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
-LaTeX Info: Redefining \nameref on input line 13.
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
 
 (./test.out) (./test.out)
 \@outlinefile=\write5
 \openout5 = `test.out'.
 
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 13.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 13.
-\symnumbers=\mathgroup6
-\sympureletters=\mathgroup7
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/CMUSerif(0)/m/n on input line 13.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/CMUSansSerif(0)/bx/n on input line 
-13.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/CMUSansSerif(0)/bx/n on input line 
-13.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/CMUSansSerif(0)/m/n on input line 1
-3.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/CMUSansSerif(0)/m/n on input line 
-13.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/CMUSansSerif(0)/m/it on input line 
-13.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/CMUSansSerif(0)/m/it on input line
- 13.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/CMUTypewriterText(0)/m/n on input l
-ine 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/CMUTypewriterText(0)/m/n on input l
-ine 13.
-LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/CMUSansSerif(0)/m/n --> TU/CMUSansSerif(0)/bx/n on i
-nput line 13.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/CMUSansSerif(0)/m/it --> TU/CMUSansSerif(0)/bx/it on
- input line 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/CMUSerif(0)/bx/n on input line 13.
-
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/CMUSansSerif(0)/bx/n --> TU/CMUSansSerif(0)/bx/n on 
-input line 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/CMUSansSerif(0)/m/n --> TU/CMUSansSerif(0)/bx/n on i
-nput line 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/CMUSansSerif(0)/m/it --> TU/CMUSansSerif(0)/bx/it on
- input line 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/CMUTypewriterText(0)/m/n --> TU/CMUTypewriterText(0)
-/bx/n on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1213,86 +1449,74 @@ ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 
-Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
-(fontspec)             this).
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
 
-\symlegacymaths=\mathgroup8
-LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 13.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 13.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 13.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 13.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 13.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 13.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 13.
-LaTeX Font Info:    Redeclaring math accent \check on input line 13.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 13.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 13.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 13.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 13.
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 13.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/CMUSerif(0)/m/n on input line 13.
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 13.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/CMUSerif(0)/m/n on input line 13.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/CMUSerif(0)/m/n --> TU/CMUSerif(0)/m/n on input line
- 13.
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 13.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  TU/texgyrepagella-math.otf(1)/m/n --> TU/CMUSerif(0)/m/
+n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  TU/CMUSansSerif(0)/m/it --> TU/CMUSerif(0)/m/it on inpu
-t line 13.
+(Font)                  OT1/cmr/m/it --> TU/CMUSerif(0)/m/it on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  TU/CMUSansSerif(0)/bx/n --> TU/CMUSerif(0)/bx/n on inpu
-t line 13.
+(Font)                  OT1/cmr/bx/n --> TU/CMUSerif(0)/bx/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  TU/CMUSansSerif(0)/m/n --> TU/CMUSansSerif(0)/m/n on in
-put line 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  TU/CMUTypewriterText(0)/m/n --> TU/CMUTypewriterText(0)
-/m/n on input line 13.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/CMUSerif(0)/m/n --> TU/CMUSerif(0)/bx/n on input lin
-e 13.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/CMUSansSerif(0)/bx/it --> TU/CMUSerif(0)/bx/it on in
-put line 13.
+(Font)                  OT1/cmss/m/n --> TU/CMUSansSerif(0)/m/n on input line 1
+5.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/CMUSansSerif(0)/bx/n --> TU/CMUSansSerif(0)/bx/n on 
-input line 13.
+(Font)                  OT1/cmss/bx/n --> TU/CMUSansSerif(0)/bx/n on input line
+ 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/CMUTypewriterText(0)/m/n on input l
+ine 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/CMUTypewriterText(0)/bx/n --> TU/CMUTypewriterText(0
-)/bx/n on input line 13.
- (./test.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+(Font)                  OT1/cmtt/m/n --> TU/CMUTypewriterText(0)/bx/n on input 
+line 15.
+(./test.nav)
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
 
-] [2
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
 
-] [3
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+[1
 
 ]
 \tf@nav=\write6
@@ -1304,22 +1528,26 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@snm=\write8
 \openout8 = `test.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+ (./test.aux
 
-(./test.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 42.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/Harfbuzz'.
+
+)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `test.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
  ) 
 Here is how much of TeX's memory you used:
- 32274 strings out of 494154
- 645725 string characters out of 6168411
- 754637 words of memory out of 5000000
- 35682 multiletter control sequences out of 15000+600000
- 537730 words of font info for 91 fonts, out of 8000000 for 9000
+ 38766 strings out of 494154
+ 763499 string characters out of 6168411
+ 1040770 words of memory out of 5000000
+ 42122 multiletter control sequences out of 15000+600000
+ 533221 words of font info for 69 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
- 56i,15n,92p,795b,778s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,109p,795b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on test.pdf (3 pages).
+Output written on test.pdf (1 page).
