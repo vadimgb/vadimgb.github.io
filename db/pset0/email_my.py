@@ -4,11 +4,11 @@ from email.message import EmailMessage
 from datetime import datetime
 import os
 #Настройка письма--------------------
-group = 203 
-email_subject = "Задание недели 1, 2"
+group = 201 
+email_subject = "Задание недели 0"
 #имя, msg_text
-msg_text = "выполняем все для недели 1, 2 с сайта vadimgb.github.io"
-startDatetime = datetime(2020, 9, 4, 0, 0)
+msg_text = "вы выполнили задание недели 0"
+startDatetime = datetime(2020, 9, 1, 0, 0)
 #-------------------------------------
 
 # Получаем информацию о поулчателх
