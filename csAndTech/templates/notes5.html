@@ -1,0 +1,194 @@
+{% extends "layout.html" %}
+{% block tytle %}
+SQL
+{% endblock %}
+
+{% block body %}
+<h1>SQL</h1>
+<h2>PostgreSQL</h2>
+<h3>Создание базы данных на heroku</h3>
+<p>Мы могли бы установить postgresql локально,
+но мы разместим нашу базу данных на Heroky,
+online web hosting serivce.</p>
+<ol>
+	<li> Зайдите на <a href="https://www.heroku.com/">https://www.heroku.com/</a>, создайте аккаунт если его ещё нет.</li>
+	<li>На dashboard heroku кликните "New" и выберите "Create new app".</li>
+	<li>Дайте название вашему приложению(app-name) и кликните "Create app".</li>
+	<li>На странице "Overview" кликните "Configure Add-ons".</li>
+	<li>В Add-ons раздели начните набирать и выберите Heroku Postgres.</li>
+	<li>Выберите "Hobby Dev - Free" план, кликните "Submit Order Form".</li>
+	<li>Кликните "Heroku Postgres" ссылку</li>
+	<li>Вы оказались на странице "Overview", выберите "Settings" и "View Credentials". Там находится информация, необходимая для подключения к созданной для вас базе данных. Скопируйте URI, мы будем использовать его.</li>
+</ol>
+<h3>psql</h3>
+<p>Для подключения к базе данных, в терминале наберите </p>
+<pre>
+<code>
+$psql ваш_URI
+</code>
+</pre>
+<p>Для создания таблицы используем SQL запрос</p>
+<pre>
+<code>
+create table students(id serial primary key, firstname text not null, lastname text not null);
+insert into students (firstname, lastname) values ('Harry', 'Potter'), ('Ron', Waesley');
+</code>
+</pre>
+<p>Первый запрос создаст таблицу students. В ней будет поле id, оно будет первичным ключом, поле firstname и lastname имеют тип текстовый и обязательны для заполнения.
+Второй запрос вводит данные в таблицу студент. Для выхода из программы введите</p>
+<pre>
+<code>
+$\q
+</code>
+</pre>
+<h3>Создание запроса к базе данных из nodejs</h3>
+<p>Создайте каталог week5/server</p>
+<pre>
+<code>
+$mkdir ~/week5/
+$cd ~/week5/
+$mkdir server
+$cd server
+</code>
+</pre>
+<p>Выполните команду </p>
+<pre>
+<code>
+$npm init -y
+</code>
+</pre>
+<p>npm - менеджер пакетов node. Она создала файл package.json.
+Нам понадобится пакет pg для создания запросов к postgresql.
+Для его установки выполните </p>
+<pre>
+<code>
+$npm install pg
+</code>
+</pre>
+<p>Создайте файл pgConfig.js и сохраните его в папке server.
+<pre>
+<code>
+const {Pool} = require('pg')
+//Строку ниже после = должна содержать вашь URI
+const connectionString = 'postgresql://user:password@host:port/database'
+
+
+const pool = new Pool(
+    {
+	    connectionString: connectionString, 
+	    ssl: { rejectUnauthorized: false},
+    })
+
+module.exports =  pool;
+</code>
+</pre>
+Не забудьте указать свой URI. Создайте файл index.js.
+<pre>
+<code>
+const pool = require("./pgConfig")
+pool.query('select * from students', (err, result) =>
+{
+	if(err) throw err
+	for(let row of result.rows)
+	{
+		console.log(row.firstname, ', ', row.lastname)
+	}
+	pool.end()
+})
+</code>
+</pre>
+<p>Мы создали переменную pool, связанную с базой данной
+сделали запрос, задали функцию обратного вызова, она
+выводит в консоль имена и фамилии из базы данных.</p>
+<h3>Создаём веб сервер с помощью express</h3>
+<h4>Выводим данные из базы в страницу</h4>
+<p>Для создания веб сервера установим пакеты.</p>
+<pre>
+<code>
+npm install express
+npm install ejs
+</code>
+</pre>
+<p>Создадим паку views, в ней мы будем размещать шаблоны веб странци.
+Создайте в ней файл index.ejs</p>
+<pre>
+<code id ="index_ejs">
+</code>
+</pre>
+	<script>
+		fetch("static/week5/index.ejs")
+		.then(responce => responce.text())
+		.then(data=>{
+			let index_ejs = document.querySelector("#index_ejs")
+			index_ejs.innerText = data
+		})
+	</script>
+<p>Изменим содержимое файла index.js на следующее
+</p>
+<pre>
+<code>
+const pool = require("./pgConfig")
+const express = require("express")
+const app = express()
+
+app.set("view engine", "ejs")
+
+app.get('/', (req, res)=>
+	{
+		pool.query("select * from students;", (err, results) =>
+			{
+				res.render('index',{rows: results.rows})
+			})
+	})
+
+app.listen(8080,()=>{console.log("portn 8080")})
+</code>
+</pre>
+<p>Выполним в терминале http-server, скопируем адрес, который выдаст команда.
+Остановим сервер, нажав Ctrl+C. Выполним node indes.js. Введём, скопированный
+адрес, в браузере и мы увидим нашу страничку с данными из базы.
+</p>
+<h4>Добавление данных из веб страницы в базу</h4>
+<p>Создадим в папке view файл register.ejs. На этой странице разместим форму для ввода данных.</p>
+<pre>
+<code id ="register_ejs">
+</code>
+</pre>
+	<script>
+		fetch("static/week5/register.ejs")
+		.then(responce => responce.text())
+		.then(data=>{
+			let index_ejs = document.querySelector("#register_ejs")
+			register_ejs.innerText = data
+		})
+	</script>
+<p>Для добавления данных в базу с формы, добавим два обработчика запросов в index.js перед app.listen. 
+Форма отправляет данные методом
+POST, поэтому для приходящих с неё данных мы будет использовать метод post.</p>
+<pre>
+<code>
+app.use(express.urlencoded({extended: false}))
+app.get('/user/register', (req, res) =>
+	{
+		res.render('register')
+	}
+)
+
+app.post('/user/register', (req, res) =>
+	{
+		let {fname, lname} = req.body
+		pool.query(`insert into students (firstname, lastname) values ($1, $2)`, [fname, lname], (err, result) =>
+			{
+				if(err)
+				{ 
+					throw err
+				}
+				res.redirect("/")
+			}
+		)
+	}
+)
+</code>
+</pre>
+<p>Запустим сервер и посмотрим на результат.
+{% endblock %}
