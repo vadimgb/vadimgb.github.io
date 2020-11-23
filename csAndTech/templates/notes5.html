@@ -35,7 +35,14 @@ insert into students (firstname, lastname) values ('Harry', 'Potter'), ('Ron', '
 </code>
 </pre>
 <p>Первый запрос создаст таблицу students. В ней будет поле id, оно будет первичным ключом, поле firstname и lastname имеют тип текстовый и обязательны для заполнения.
-Второй запрос вводит данные в таблицу студент. Для выхода из программы введите</p>
+Второй запрос вводит данные в таблицу студент.
+Для вывода данных из таблицы, выполните запрос:</p>
+<pre>
+<code>
+$select * from students;
+</code>
+</pre>
+<p>Для выхода из программы введите</p>
 <pre>
 <code>
 $\q
@@ -62,7 +69,7 @@ $npm init -y
 Для его установки выполните </p>
 <pre>
 <code>
-$npm install pg
+$npm install pg 
 </code>
 </pre>
 <p>Создайте файл pgConfig.js и сохраните его в папке server.
@@ -79,13 +86,13 @@ const pool = new Pool(
 	    ssl: { rejectUnauthorized: false},
     })
 
-module.exports =  pool;
+module.exports.pool = pool;
 </code>
 </pre>
 Не забудьте указать свой URI. Создайте файл index.js.
 <pre>
 <code>
-const pool = require("./pgConfig")
+const pool = require("./pgConfig").pool
 pool.query('select * from students', (err, result) =>
 {
 	if(err) throw err
@@ -105,8 +112,7 @@ pool.query('select * from students', (err, result) =>
 <p>Для создания веб сервера установим пакеты.</p>
 <pre>
 <code>
-npm install express
-npm install ejs
+npm install express ejs body-parser
 </code>
 </pre>
 <p>Создадим паку views, в ней мы будем размещать шаблоны веб странци.
@@ -129,9 +135,11 @@ npm install ejs
 <code>
 const pool = require("./pgConfig")
 const express = require("express")
+const bodyParser = require("body-parser")
 const app = express()
 
 app.set("view engine", "ejs")
+app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('/', (req, res)=>
 	{
@@ -141,7 +149,8 @@ app.get('/', (req, res)=>
 			})
 	})
 
-app.listen(8080,()=>{console.log("portn 8080")})
+const PORT = process.env.PORT || 8080
+app.listen(PORT,()=>{console.log(`port ${PORT}`)})
 </code>
 </pre>
 <p>Выполним в терминале http-server, скопируем адрес, который выдаст команда.
@@ -164,10 +173,9 @@ app.listen(8080,()=>{console.log("portn 8080")})
 	</script>
 <p>Для добавления данных в базу с формы, добавим два обработчика запросов в index.js перед app.listen. 
 Форма отправляет данные методом
-POST, поэтому для приходящих с неё данных мы будет использовать метод post.</p>
+POST, поэтому для приходящих с неё данных мы будет использовать маршрут post.</p>
 <pre>
 <code>
-app.use(express.urlencoded({extended: false}))
 app.get('/user/register', (req, res) =>
 	{
 		res.render('register')
@@ -191,4 +199,73 @@ app.post('/user/register', (req, res) =>
 </code>
 </pre>
 <p>Запустим сервер и посмотрим на результат.
+<h3>Размещение сервера на heroku.</h3>
+<p>Инициализируем git в папке ~/week5/server, 
+закомитем текущее состояние.
+</p>
+<pre>
+<code>
+git init
+git add .
+git commit -m "first commit"
+</code>
+</pre>
+<p>Создадим репозиторий на github, разместим в нем копию нашего
+сайта (git push origin master). Зайдём на heroku.com, выберем, созданное нами приложение,
+выберем вкладку deploy, deploy method GitHub, укажем наш репозиторий.
+</p>
+<h3>Cookie</h3>
+Создайте каталог, установите модуль cookie-session. Создайте файл.
+<pre>
+<code>
+const express = require('express'),
+	cookieSession = require('cookie-session'),
+	bodyParser = require("body-parser"),
+	app = express()
+
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(cookieSession({
+    secret:'just sekcret!'
+}))
+.....
+app.get('/', (req, res) =>
+{
+	if(req.session.login)
+		req.send(`&lt a href ='/home'&gt Home&lt/a>`)
+	else
+		req.send(`&lt a href='/login'&gt Login &lt/a&gt`)
+		})
+	
+app.get('/login', (req, res)=>
+	{
+	res.render('login.ejs')
+	})
+app.post('/login', (req, res)=>
+	{
+	const {login, password} = req.body
+	req.session.login = login
+	res.redirect('/home')
+	})
+
+app.get('/home', rediregtLogin, (req, res)=>
+	{
+		res.render('home.ejs', {login, req.session.login})
+		})
+app.get('/logout', (req, res)=>
+	{
+		req.session = null
+		res.redirect('/login')
+		})
+
+function redirectLogin(req, res, next)
+{
+	if(!req.session.login)
+		res.redirect('/login')
+	else
+		next()
+}
+</code>
+</pre>
+
+
 {% endblock %}
