@@ -255,7 +255,7 @@ app.post('/login', (req, res)=>
 	res.redirect('/home')
 	})
 
-app.get('/home', rediregtLogin, (req, res)=>
+app.get('/home', redirectLogin, (req, res)=>
 	{
 		res.render('home.ejs', {login: req.session.login})
 		})
