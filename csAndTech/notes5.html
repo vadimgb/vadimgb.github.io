@@ -302,7 +302,7 @@ function redirectLogin(req, res, next)
 		next()
 }
 
-app.listen(PORT,`listen port:${PORT}`)
+app.listen(PORT,()=>{console.log(`listen port:${PORT}`)})
 </code>
 </pre>
 
