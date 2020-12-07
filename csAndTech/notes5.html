@@ -33,6 +33,99 @@
 			</nav>
 			<main>
 				
+ <h1>Заметки</h1>
+ </header>
+ <h2>Электронные таблицы</h2>
+ <ul>
+  <li>Электронные таблицы - это программы для работы с данными
+				  представленными в виде таблиц. Файл для такой программы
+				  может содержать несколько таблиц(листов).</li>
+			  <li>Например, мы создали <a href="https://forms.gle/q4gPwEunMQY2zxJR8">форму</a> в Google Form,
+				  для опроса студентов об их любимом тв шоу. Мы можем вывести их ответы в электронную таблицу,
+				  видим,
+				  что в электронной таблице есть три столбца: "Timestamp", "название", "жанр".</li>
+			  <img src="data/favorite_tv_show.png" class="col-9"><img>
+			  <li>	Мы создали npm проект, назвали его favorites,  сохранили в него эту таблицу в виде csv файла favorites.csv. 
+				  Выложили этот проект на github.</li>
+			  <li>
+				  Зайдите на ссылку 
+				  <a href="https://github.com/vadimgb1/favorites">favorites"</a>.
+				  Нажмите на кнопку Fork, в вашем аккаунте   появится копия репозитория. 
+				  Находясь в копии репозитория, нажмите на зелёную кнопку Code и скопируйте адрес.
+				  Перейдите в ide, выполните команду git clone адрес_копии. Перейдите 
+				  в каталог favorites <kbd>cd favorites</kbd>. Чтобы установить необходимые
+				  модули, выполните <kbd>npm install</kbd>. 
+			  </li>
+			  <li>Создайте файл <code>favorites.js</code>:</li>
+  <pre>
+  <code class="language-javascript">
+	const	fs = require('fs'),
+		csv = require('csv-parser')
+
+	const fStream = fs.createReadStream('favorites.csv')	//поток считывает файл
+	const csvStream = csv().on('data', data=>{console.log(data['название'])}) 
+	fStream.pipe(csvStream)//Данные из первого потока направляем во второй
+</code>
+  </pre>
+			  <ul>
+				  <li><kbd>node favorites.js</kbd> выполнит файл. 
+					  Мы просто открыли файл и распечатали названия. 
+					  csv-parser  для строки из файла создаёт объект, названия его свойств - 
+					  это названия столбцов из файла. </li>
+			  </ul>
+			  <li>Создайте файл favorite2.js. С его помощью мы будем выводить сколько раз название встречалось.
+				  Мы создаём объект names. Названием свойства будет название фильма, 
+				  а значением будет число отслеживающее сколько раз встречалось название.</li>
+<pre>
+<code>
+const	fs = require('fs'),
+	csv = require('csv-parser')
+const names = {}
+
+const stream = fs.createReadStream('favorites.csv').pipe(csv())
+
+stream.on('data', data =>
+	{
+		const name = data['название'].toLowerCase()
+		if(names[name])
+		{
+			names[name] += 1
+		}
+		else
+			names[name] = 1
+	})
+
+stream.on('end', ()=>
+	{
+		for(let name in names)
+			console.log(`${name}: ${names[name]}`)
+		
+	})
+</code>
+</pre>
+
+	<li>Вы можем поменять порядок свойств в объекте:</li>
+<pre>
+<code>
+stream.on('end', ()=>
+	{
+		names = Object.keys(names).sort((a,b) => names[a] - names[b]).reverse()
+			.reduce((a, v) => {a[v] = names[v]; return a;}, {})
+
+	//	console.table(names)
+		for(let name in names)
+			console.log(`${name}: ${names[name]}`)
+		
+	})
+
+</code>
+</pre>
+	<li>
+		Отправьте ваши изменения на github, выполнив <kbd>git push origin master</kbd>.
+		Перейдите на github в свою копию репозитория favorites, нажмите на кнопку Pull request->New pull request,
+		так вы отправите ваши дополнения на рассмотрение в базовый репозиторий.
+	</li>
+
 <h1>SQL</h1>
 <h2>PostgreSQL</h2>
 <h3>Создание базы данных на heroku</h3>
