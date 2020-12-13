@@ -20,7 +20,7 @@ SQL
 				  Выложили этот проект на github.</li>
 			  <li>
 				  Зайдите на ссылку 
-				  <a href="https://github.com/vadimgb1/favorites">favorites"</a>.
+				  <a href="https://github.com/vadimgb1/favorites">favorites</a>.
 				  Нажмите на кнопку Fork, в вашем аккаунте   появится копия репозитория. 
 				  Находясь в копии репозитория, нажмите на зелёную кнопку Code и скопируйте адрес.
 				  Перейдите в ide, выполните команду git clone адрес_копии. Перейдите 
@@ -51,7 +51,7 @@ SQL
 <code>
 const	fs = require('fs'),
 	csv = require('csv-parser')
-const names = {}
+let names = {}
 
 const stream = fs.createReadStream('favorites.csv').pipe(csv())
 
