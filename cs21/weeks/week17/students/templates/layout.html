@@ -5,49 +5,15 @@
 	<!-- Bootstrap CSS --> 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
 	<meta charset="utf-8">
-	<link href="style.css" rel="stylesheet">
 	<title> 
-		
-Информатика
- 
+		{% block title %} 
+		{% endblock %} 
 	</title> 
-	<link rel="icon" href="data/favicon.ico" type="image/x-icon">
 	</head>
 	<body>
-		<div id=flex>
-			<nav>
-				<ul>
-					<li><a style="font-syze: 3em; font-weight: bold;" href="csAndTech/index.html">ИиИТ</a></li>
-					<li> <a href="discassion.html">Обсуждение</a></li>
-					<hr>
-
-				</ul>
-			</nav>
 			<main>
-				
-<header>
-<p>Занятия проходят в 
-<a href="http://bbb.tspu.edu.ru/b/hxv-qj2-hnx">http://bbb.tspu.edu.ru/b/hxv-qj2-hnx</a>. 
-Вы можете зайти и с другой группой.
-Время занятий<br>
-26.01.21 в 8:30 и в 12:25<br>
-27.01.21 в 8:30<br>
-30.01.21 в 8:30<br>
-
- Попробуйте войти заранее;)
-</p>
-
-
-
- <h2>Выберите свой предмет</h2>
-</header>
-<main>
- <ul>
-	 <li><a href="cs21/index.html">Очная форма обучения</a></li>
-	 <li><a href="corrStudents/index.html">Заочники</a></li>
- </ul>
-</main>
-
+				{% block body %} 
+				{% endblock %}
 			</main>
 		</div>
 
