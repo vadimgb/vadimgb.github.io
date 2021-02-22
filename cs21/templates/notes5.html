@@ -370,5 +370,82 @@ app.listen(PORT,()=>{console.log(`listen port:${PORT}`)})
 </code>
 </pre>
 
+<h2>Структура каталогов для express.</h2>
+<p>Вместо того чтобы рабоатать с одним файлом из 100 строк кода,
+лучше создать 10 файлов по 10 строк в каждом. Для начала мы созадидм
+следующую набор каталогов.
+<pre>
+<code>
+mkdir views
+mkdir public
+mkidr public/images
+mkdir public/javascripts
+mkdir models
+mkdir routes
+mkdir controllers
+mkdir bin
+</code>
+</pre>
+В каталоге bin мы разместим файл www.
+<pre>
+<code>
+const PORT = process.env.PORT || 8080
+var app = require('../app')
+app.listen(PORT, ()=>console.log(`Слуашет PORT:${PORT}`))
+</code>
+</pre>
+Это файл импортирует объект app и  
+настраивает на прослушивание порта.
+В основном каталоге проекта создадим файл app.js
+<pre>
+<code>
+const express = require('express')
+const app = exress()
+
+app.use(express.static('public'))
+
+var indexRouter = require('./routes/index.js')
+
+app.use('/', indexRouter)
+module.exports = app
+</code>
+</pre>
+Создадим файл routes/index.js
+<pre>
+<code>
+var express = require('express')
+var router = express.Router()
+var index_controller = require('../controllers/indexController.js')
+
+router.get('/', index_controller.index)
+module.exports =router
+
+</pre>
+</code>
+
+В файле controllers/indexController.js
+зададим функцию обработки запросов роута 
+<pre>
+<code>
+exports.index = (req, res) => res.render('index/index.ejs')
+</code>
+</pre>
+Создадим файл views/index/index.ejs
+<pre>
+<code id="ex1">
+</code>
+</pre>
+<script>
+	const ex1 = document.querySelector("#ex1")
+	const ex1_text =`<!doctype html> 
+<html>
+	<head>
+	</head>
+	<body>
+		<p>Hello, World!<p>
+	</body>
+</html>`
+	ex1.innerText = ex1_text 
+</script>
 
 {% endblock %}
