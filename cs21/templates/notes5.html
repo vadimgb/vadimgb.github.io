@@ -371,8 +371,18 @@ app.listen(PORT,()=>{console.log(`listen port:${PORT}`)})
 </pre>
 
 <h2>Структура каталогов для express.</h2>
-<p>Вместо того чтобы рабоатать с одним файлом из 100 строк кода,
-лучше создать 10 файлов по 10 строк в каждом. Для начала мы созадидм
+<p>Создайте каталог hogwarts.
+</p>
+<pre>
+<code>
+mkdir ~/hogwarts
+cd ~/hogwarts
+npm init -y
+npm install express ejs dotenv
+</code>
+</pre>
+Вместо того чтобы работать с одним файлом из 100 строк кода,
+лучше создать 10 файлов по 10 строк в каждом. Для начала мы создадим
 следующую набор каталогов.
 <pre>
 <code>
@@ -400,7 +410,7 @@ app.listen(PORT, ()=>console.log(`Слуашет PORT:${PORT}`))
 <pre>
 <code>
 const express = require('express')
-const app = exress()
+const app = express()
 
 app.use(express.static('public'))
 
